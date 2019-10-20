@@ -1,7 +1,7 @@
 var h2 = document.getElementsByTagName('h2')[0],
     start = document.getElementById('start'),
     stop = document.getElementById('stop'),
-    reset = document.getElementById('clear'),
+    reset = document.getElementById('reset'),
     seconds = 0, minutes = 0, hours = 0,
     t;
 
