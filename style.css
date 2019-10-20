@@ -44,10 +44,10 @@ button {
   border: 0;
   outline: 0;
 
-  color: #fff;
+  color: whitesmoke;
 
   
   background: #00ff00; 
-  background: linear-gradient(to right, #00ff00,#ff0000);
+  background: linear-gradient(to right, #00ff00, #ff0000);
 }
 
