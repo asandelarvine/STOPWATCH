@@ -17,7 +17,7 @@ body{
 }
 #timer-wrap h1{
     font:bold 55px serif;
-    color:#0000ff;
+    color:#00ffffff;
     margin:10px auto 0;     
 }
 #buttons{
@@ -37,17 +37,25 @@ body {
   height: 100px;
   margin: 0;
 }
-button {
+#start{
   width: 135px;
   width: 200px;
   height: 50px;
-  border: 0;
-  outline: 0;
-
-  color: whitesmoke;
-
-  
+  border: 2px solid;
   background: #00ff00; 
-  background: linear-gradient(to right, #00ff00, #ff0000);
 }
-
+#stop {
+    width: 135px;
+    width: 200px;
+    height: 50px;
+    border: 2px solid;
+    background: #ff0000; 
+  }
+  #reset{
+    width: 135px;
+    width: 200px;
+    height: 50px;
+    border: 2px solid;
+    background: #00ff; 
+  }
+ 

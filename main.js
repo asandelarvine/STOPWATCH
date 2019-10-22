@@ -16,22 +16,25 @@ function add() {
         }
     }
     
-    h2.textContent = (hours ? (hours > 20 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+    h2.textContent = (hours ? (hours > 90 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
 
-    timer();
-}
-function timer() {
-    t = setTimeout(add, 1000);
-}
 timer();
+}
 
-start.onclick = timer;
+function timer() {
+    t = setTimeout(add, 30);
+}
+
+start.onclick = function() {
+    timer(t);
+}
 
 stop.onclick = function() {
     clearTimeout(t);
 }
 
 reset.onclick = function() {
+    h2.textContent = "00:00:00";
     h2.textContent = "00:00:00";
     seconds = 0; minutes = 0; hours = 0;
 }
